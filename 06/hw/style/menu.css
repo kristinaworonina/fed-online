@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f7b3b3;
+}
+
+.container{
+    width: 360px;
+    margin: 100px auto;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    padding: 56px 20px 91px 20px;
+}
+button{
+    border: none;
+    background-color: white;
+    padding-left: 8px;
+}
+
+h1{
+    font-family: Inter;
+font-style: Semi Bold;
+font-size: 32px;
+line-height: 100%;
+letter-spacing: 0%;
+}
+
+input{
+    width: 316px;
+height: 44px;
+opacity: 1;
+border-radius: 12px;
+padding-left: 19px;
+}
+
+.menu-items{
+    padding: 0 4px;
+    padding-top: 20px;
+}
+
+.position-img{
+    width: 74px;
+height: 74px;
+border-radius: 12px;
+background: #FFF;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.position-title {
+    font-family: Inter;
+    text-align: center;
+    color: #C4C4C4;
+    margin-top: 6px; 
+}
+
+.menu-position{
+    display: inline-block;
+}
+
+.menu-position:hover .position-img{
+    background-color: #EAE2B7;
+    border: 1px solid rgb(60, 125, 181);
+}
+
+.menu-position:hover .position-title{
+    color: black;
+    
+}
+
+h2{
+    color: #003049;
+   font-family: Inter; 
+}
+
+.burger-img {
+    width: 316px;
+    height: 88px;
+    border-radius: 12px;
+    background: #FFF;
+    display: flex;
+    align-items: center; 
+    padding-left: 20px;
+}
+
+.burger-text {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    padding-left: 10px;
+}
+
+.burger-title {
+    font-family: Inter;
+    color: black;
+    margin: 0; /* unnecessary indents removed */
+}
+
+.burger-price {
+    color: red;
+    font-family: Inter;
+    margin: 4px 0 0 0;
+}
+
+.burger-position {
+    display: inline-block;
+    margin-top: 8px; /* space between cards*/
+}
+
+.burger-position:hover .burger-img {
+    border: 1px solid rgb(60, 125, 181);
+}
