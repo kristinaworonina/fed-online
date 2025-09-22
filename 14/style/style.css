@@ -179,12 +179,13 @@ nav a:hover::after{
     line-height: 120%; /* 1.35rem */
     letter-spacing: 1px;     
 }
-.social-link a{
+
+.social-link a {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 34px;
-    height: 34px; 
+    height: 34px;
     text-decoration: none;
     background-color: transparent;
     border-radius: 100%;
@@ -193,19 +194,39 @@ nav a:hover::after{
     right: -16px;
     margin-bottom: 8px;
 }
-.social-link-img-hover{
-    display: none;
-}
-.social-link a:hover{
+
+.social-link a:hover {
     background-color:#F2994A;
 }
-.social-link a:hover .social-link-img-hover{
-    display: block;
-}
-.social-link a:hover .social-link-img{
+
+.social-link-img-hover {
     display: none;
 }
-/* client */
+
+.social-link a:hover .social-link-img-hover {
+    display: block;
+}
+
+.social-link a:hover .social-link-img {
+    display: none;
+}
+
+.facebook-link {
+    background-color: #F2994A !important;
+}
+
+.facebook-link:hover {
+    background-color: #F2994A !important;
+}
+
+.facebook-link:hover .social-link-img {
+    display: block !important;
+}
+.facebook-link:hover .social-link-img-hover {
+    display: none !important;
+}
+
+
 .client{
     background-color: #3F9AB7;
     padding: 32px 0;
