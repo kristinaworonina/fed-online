@@ -259,6 +259,7 @@ nav a:hover::after{
     font-size: 24px;
     font-weight: 700;
 }
+
 .client-info span{
     font-size: 20px;
     font-weight: 400; 
