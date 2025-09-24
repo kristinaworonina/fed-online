@@ -1,0 +1,359 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+}
+
+header {
+    margin-top: 46px;
+    padding-left: 26px;
+    padding-right: 24px;
+
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.left-block {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 46px;
+}
+
+.categories {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0%;
+
+    gap: 46px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.header-links {
+    color: black;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.btn-shoppy {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 60px;
+    width: 163px;
+    height: 46px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 46px;
+}
+
+.btn-search,
+.btn-basket {
+    border: none;
+    cursor: pointer;
+}
+
+.main {
+    padding-left: 24px;
+    padding-right: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero {
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 71px;
+}
+
+.caption-block {
+    margin-top: 175px;
+    width: 301px;
+}
+
+.caption {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 60px;
+
+}
+
+.describtion {
+    margin-top: 10px;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.btn-shop {
+    margin-top: 25px;
+    width: 195px;
+    height: 50px;
+    color: white;
+    background-color: black;
+    border-radius: 15px;
+    font-family: Poppins;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 18px;
+    line-height: 28px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.hero-img {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.left-convers {
+    margin-top: 73px;
+}
+
+.right-convers {
+    margin-top: 53px;
+}
+
+.product {
+    margin-top: 150px;
+}
+
+.women-men {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.women-block,
+.men-block {
+    position: relative;
+    display: inline-block;
+}
+
+.women-title,
+.men-title {
+    position: absolute;
+    top: 40px;
+    left: 20px;
+
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.shop-now-women {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.shop-now-men {
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.new-releases,
+.top-kicks {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 30px;
+}
+
+.section-name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.img-block {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+}
+
+.product-name {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.price {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.black-line {
+    margin-top: 15px;
+    width: 300px;
+    height: 7px;
+    background-color: black;
+}
+
+.notification {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: black;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.notification-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1000;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.btn-join {
+    width: 235px;
+    height: 55px;
+    color: black;
+    background-color: white;
+    border-color: black;
+    border-width: 2px;
+
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 18px;
+    line-height: 28px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+footer {
+  background-color: black;
+  margin: 0;
+  width: 100%;
+}
+
+.container{
+    padding-right: 100px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info {
+    padding-top: 60px;
+    margin-left: 24px;
+    margin-right: 155px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 25px;
+
+    display: flex;
+    justify-items: center;
+    align-items: start;
+    gap: 155px;
+}
+
+.info-title,
+.media-title  {
+    color: #C4C4C4;
+}
+
+.my-account,
+.help,
+.about,
+.legal-stuff{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.info-link-block,
+.social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.info-link{
+    color: white;
+    text-decoration: none;
+}
+
+.social-media-container{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.social-media-icon{
+    color: black;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
