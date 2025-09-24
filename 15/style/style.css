@@ -294,7 +294,7 @@ body {
     scale: 120%;
   }
   .img-movies{
-    padding-right: 50px;
+    padding-right: 35px;
     flex-wrap: wrap;
     margin-top: 20px;
     gap: 10px;
@@ -306,8 +306,8 @@ body {
     height: 60px;
     border-left: 18px solid #D40D1F;
   }
-  
 
+  .block-right{
+    padding-left: 200px;
+  }
 }
-
-
