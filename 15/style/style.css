@@ -37,20 +37,15 @@ body {
 }
 
 .logo {
-    padding-top: 70px;
+    margin-top: 70px;
+    padding-right: 20px;
+    border-right: 3px solid white;
 }
 
-.slash {
-    color: white;
-    padding-right: 10px;
-    padding-left: 20px;
-    padding-top: 68px;
-    font-size: 23px;
-    font-weight: 500;
-}
 
 .date {
     padding-top: 77px;
+    margin-left: 10px;
 }
 
 
@@ -91,6 +86,14 @@ body {
     align-items: center;
     gap: 20px;
 }
+.drama{
+    padding-right: 20px;
+    border-right: 3px solid white;
+}
+.thriller{
+    padding-right: 20px;
+    border-right: 3px solid white;
+}
 
 .title {
     color: white;
@@ -105,12 +108,22 @@ body {
     gap: 10px;
 }
 
+.white-info-data{
+    color: white;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
 .white-info {
     color: white;
     font-weight: 500;
     font-size: 26px;
     line-height: 100%;
     letter-spacing: 0%;
+    padding-left: 10px;
+    border-left: 3px solid white;
 }
 
 .grey-info {
@@ -308,6 +321,6 @@ body {
   }
 
   .block-right{
-    padding-left: 200px;
+    padding-left: 215px;
   }
 }
