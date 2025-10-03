@@ -191,9 +191,7 @@
  }
 
  .movies-limit {
-     position: relative;
-     width: 100%;
-     margin: 0 auto;
+     width: 60%;
  }
 
  .movies {
@@ -281,7 +279,7 @@
 
      .position {
          margin-left: 20px;
-         padding-right: 40px;
+         padding-right: 25px;
      }
 
      .container {
@@ -343,7 +341,10 @@
          justify-content: center;
          align-items: center;
      }
-
+     .movies-limit {
+    width: 100%;
+    margin: 0 auto;
+}
      .img-movies {
          flex-direction: row;
          flex-wrap: wrap;
