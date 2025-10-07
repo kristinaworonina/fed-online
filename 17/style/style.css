@@ -94,6 +94,7 @@ header {
 .btn-basket {
     border: none;
     cursor: pointer;
+    background-color: white;
 }
 
 .main {
