@@ -102,7 +102,7 @@ header {
     padding-right: 24px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
 }
 
 .hero {
@@ -264,19 +264,62 @@ header {
     line-height: 40px;
 }
 
+
+
+
 .img-block {
     margin-top: 30px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 35px;
+    flex-wrap: nowrap;
+    gap: 85px;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    justify-content: flex-start;
+    padding-bottom: 15px;
 }
+
+.new-releases-img,
+.top-kicks-img {
+    flex: 0 0 auto;
+    width: 250px;
+    display: inline-block;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.img-block::-webkit-scrollbar {
+    height: 7px;
+}
+
+.img-block::-webkit-scrollbar-thumb {
+    background-color: black;
+    min-width: 300px;
+}
+
+.img-block::-webkit-scrollbar-track {
+  background: white; /* фон трека */
+}
+
+.img-block::-webkit-scrollbar-track-piece:start {
+    margin-left: calc(50% - 150px); /* половина ширины black-line */
+}
+.img-block::-webkit-scrollbar-track-piece:end {
+    margin-right: calc(50% - 150px);
+}
+
 
 .img-block-mobile{
     display: none;
     justify-content: space-between;
     align-items: center;
     gap: 35px;
+
+    overflow-x: auto;          /* включаем горизонтальный скролл */
+  white-space: nowrap
 }
 
 .product-name {
@@ -420,6 +463,13 @@ footer {
     align-items: center;
 }
 
+
+
+
+
+
+
+
 @media (max-width: 1020px) {
     header {
         margin-top: 34px;
@@ -513,7 +563,39 @@ footer {
         display: none;
     }
     .img-block-mobile{
+        position: relative;
         display: flex;
+        flex-wrap: nowrap;
+        gap: 35px;
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-behavior: smooth;
+        justify-content: flex-start;
+        padding-bottom: 25px; /* место под линию */
+        scrollbar-width: none;
+    }
+
+    .img-block-mobile::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* фейковая черная линия для мобилки */
+    .img-block-mobile::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 74px; /* как у твоей .black-line в мобильной версии */
+        height: 7px;
+        background-color: black;
+        border-radius: 0;
+    }
+
+     .new-releases-img,
+    .top-kicks-img {
+        flex: 0 0 auto;
+        width: 220px; /* немного меньше для мобилки */
     }
     .black-line{
         width: 74px;
