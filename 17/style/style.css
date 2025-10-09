@@ -108,7 +108,7 @@ header {
 .hero {
 
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     gap: 71px;
 }
@@ -197,6 +197,7 @@ header {
 .women-img,
 .men-img {
     display: block;
+    width: 100%;
 }
 
 .women-img-mobile,
@@ -208,6 +209,7 @@ header {
 .men-block {
     position: relative;
     display: block;
+    width: 50%;
 }
 
 .women-title,
@@ -289,6 +291,7 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    width: 20%;
 }
 
 .img-block::-webkit-scrollbar {
