@@ -1,0 +1,306 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    margin: 0;
+    display: flex;             
+    justify-content: center;    
+    align-items: center;        
+    height: 100vh;
+}
+
+main{
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 70px;
+}
+
+.first-row,
+.second-row,
+.third-row,
+.forth-row,
+.fifth-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+.fill-in,
+.glowing,
+.fill-up,
+.slide,
+.raise,
+.close,
+.zoom,
+.offset{
+    width: 105px;
+    height: 55px;
+    background-color: black;
+    color: #0F89FA;
+    border-radius: 0;
+    border: 2px solid #0F89FA;
+    transition: all 0.5s;
+}
+
+.fill-in:hover {
+    background-color: #0F89FA;
+    color: white;
+}
+
+.glowing:hover{
+    box-shadow: 0px 0px 8px 4px #0F89FA;
+}
+
+.fill-up,
+.slide,
+.close {
+    position: relative;
+    overflow: hidden; 
+    z-index: 0;
+}
+
+.fill-up::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #0F89FA;
+    z-index: -1;
+    transition: height 0.5s ease;
+}
+
+.fill-up:hover::before {
+    height: 100%;
+}
+
+.fill-up:hover{
+    color: white;
+}
+
+.slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #0F89FA;
+    z-index: -1;
+    transition: width 0.5s ease;
+}
+
+.slide:hover::before {
+    width: 100%;
+}
+
+.slide:hover {
+    color: white;
+}
+
+.raise:hover {
+    transform: translateY(-8px); 
+    box-shadow: 0 8px 20px -4px #0F89FA; 
+}
+
+.close::before,
+.close::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #0F89FA;
+    z-index: -1;
+    transition: transform 0.5s ease;
+}
+
+.close::before {
+    left: 0;
+    transform: translateX(-100%);
+}
+
+.close::after {
+    right: 0;
+    transform: translateX(100%);
+}
+
+.close:hover::before,
+.close:hover::after {
+    transform: translateX(0);
+}
+
+.close:hover {
+    color: white;
+}
+
+.notify-me{
+    width: 105px;
+    height: 55px;
+    background-color: #0F89FA;
+    color: black;
+    border-radius: 0;
+    border: 2px solid #0F89FA;
+    transition: all 0.5s;
+    position: relative;
+    overflow: hidden;
+}
+
+.notify-me::after {
+    content: "Thanks";
+    position: absolute;
+    top: -100%; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0F89FA;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: top 0.5s ease;
+}
+
+.notify-me:hover::after {
+    top: 0;
+}
+
+.notify-me:hover {
+    color: transparent;
+}
+
+.hover-me {
+    position: relative;
+    overflow: hidden;
+    width: 105px;
+    height: 55px;
+    border: 2px solid #0F89FA;
+    color: white;
+    background-color: black;
+    z-index: 0;
+}
+
+.hover-me::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%; 
+    height: 100%;
+    background-color: #0F89FA;
+    color: white;
+    z-index: -1;
+    transition: width 0.5s ease;
+}
+
+.hover-me:hover::before {
+    width: 100%;
+}
+
+.zoom:hover {
+    transform: scale(1.1);
+}
+
+.explore-more {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 105px;
+    height: 55px;
+    background-color: black;
+    color: #0F89FA;
+    border: 2px solid #0F89FA;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    position: relative; 
+    z-index: 0;
+}
+
+
+.explore-more::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #0F89FA;
+    z-index: -1;
+    transition: width 0.5s ease;
+}
+
+
+.explore-more i {
+    opacity: 0;
+    transform: translateX(-5px);
+    transition: all 0.4s ease;
+    color: white;
+    font-size: 16px;
+}
+
+
+.explore-more:hover {
+    width: 160px; 
+    color: white;
+}
+
+.explore-more:hover::before {
+    width: 100%;
+}
+
+.explore-more:hover i {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.hover-me-round {
+    position: relative;
+    overflow: hidden;
+    width: 105px;
+    height: 55px;
+    border: 2px solid #0F89FA;
+    border-radius: 28px;
+    color: white;
+    background-color: black;
+    z-index: 0;
+}
+
+.hover-me-round::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%; 
+    height: 100%;
+    border-radius: 28px;
+    background-color: #0F89FA;
+    color: white;
+    z-index: -1;
+    transition: width 0.5s ease;
+}
+
+.hover-me-round:hover::before {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
